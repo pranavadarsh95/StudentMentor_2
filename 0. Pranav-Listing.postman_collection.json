@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "a9b76f0c-d37d-4aa6-8230-f070ae10f5a5",
+		"name": "0. Pranav-Listing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30004473"
+	},
+	"item": [
+		{
+			"name": "Dummy-KT",
+			"item": [
+				{
+					"name": "Student",
+					"item": [
+						{
+							"name": "Read All Students",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/student/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Student",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 102,\n    \"name\": \"parmindar bansal\",\n    \"city\": \"patna\",\n    \"college\": \"st xavier college\",\n    \"mentorId\": \"501\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/student/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch All Student cities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/student/uniqueCities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"uniqueCities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Student based on ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/student/103",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"103"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Student based on Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/student/106",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"106"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Student Based on Id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 103,\n    \"name\": \"Nisha\",\n    \"city\": \"Udaipur city\",\n    \"college\": \"RNS College of Engineering\",\n    \"mentor\": {\n      \"id\": 503,\n      \"mentorName\": \"Kailash Pandit\",\n      \"mentorCity\": \"Chennai\",\n      \"specialization\": \"Commerce\",\n      \"salary\": \"780K\",\n      \"students\": null\n    }\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/student/103",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"103"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Mentor",
+					"item": [
+						{
+							"name": "Create Mentor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 501,\n    \"mentorName\": \"Nimisha\",\n    \"mentorCity\": \"Mumbai\",\n    \"specialization\": \"Arts and Laws\",\n    \"salary\": \"800K\",\n    \"students\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/mentor/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"mentor",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read All Mentors",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/mentor/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"mentor",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Mentor based on ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/mentor/501",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"mentor",
+										"501"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Mentor based on Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/mentor/509",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"mentor",
+										"509"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Mentor Based on Id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 501,\n    \"mentorName\": \"Amrit jain\",\n    \"mentorCity\": \"Ahemadabad\",\n    \"specialization\": \"Computer Science\",\n    \"salary\": \"300K\",\n    \"students\": [\n      {\n        \"id\": 104,\n        \"name\": \"Neha\",\n        \"city\": \"Noida\",\n        \"college\": \"Rama College of Commerce\",\n        \"mentor\": {\n          \"id\": 501,\n          \"mentorName\": \"Amrit jain\",\n          \"mentorCity\": \"Ahemadabad\",\n          \"specialization\": \"Computer Science\",\n          \"salary\": \"300K\",\n          \"students\": null\n        }\n      }\n    ]\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/Mentor/513",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"Mentor",
+										"513"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Common",
+					"item": [
+						{
+							"name": "Find Mentor Based on Student Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/find/mentors/Karan luthra",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"find",
+										"mentors",
+										"Karan luthra"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Students Based on Mentor Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/find/students/Nimisha",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"find",
+										"students",
+										"Nimisha"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Check Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
